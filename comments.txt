@@ -1,0 +1,10 @@
+Is it better to write js logic directly then html or code them in parallel?
+The game logic itself is about:
+    1) alternating turns (odd is O and even is X) or choose whether want X or O
+    2) before choosing a cell, check if the cell is available or taken (disable taken cells in HTML)
+    3) after choosing the cell, check if it is inside the allowed grid
+    4) after 5 rounds start checking for a win
+    5) when the game finishes, ask for play again
+How the result is decided? Assuming the grid is a two dimensional array "arr[3][3]"
+    1) looping vertical, horizontal and diagonal, whenever 3 similar character are met, it is an end game with win/lose
+    2) if round 9 is reached with no win or lose, its a draw
