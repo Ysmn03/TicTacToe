@@ -1,0 +1,82 @@
+@font-face {
+  font-family:'Chicle';
+  src: url('./Fonts/Chicle-Regular.ttf') format('truetype');
+  font-weight: 900;
+}
+body{
+    font-size: 2rem !important;
+    text-align: center !important;
+    background-color: #d1e7dd;
+    font-family:'Chicle'!important;
+}
+.cell {
+    width: 100%;
+    padding-top: 75%;
+    position: relative;
+    border: 3px inset #d0e6e6;
+    border-radius: 5px;
+  }
+  .cell-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #board {
+    width: 600px;
+    margin: auto;
+    background-color:#9bcab5 !important;
+    padding: 3rem;
+    margin-top: 3rem;
+  }
+  #message {
+    color: #d35400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+  }
+  #turn {
+    font-weight: 600;
+    color: #2c3e50;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 25px;
+}
+.custom-button{
+  font-family: 'Chicle';
+  font-size: 25px;
+  color: white;
+  background-color: #2ecc71; /* Fresh green */
+  border: none;
+  border-radius: 30px;
+  padding: 6px 22px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-top: 25px;
+}
+.custom-button:hover{
+    background-color: #27ae60; /* Darker green */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+.row{
+  --bs-gutter-x:1.5rem;
+  --bs-gutter-y:0;
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:calc(-1 * var(--bs-gutter-y));
+  margin-right:calc(-.5 * var(--bs-gutter-x));
+  margin-left:calc(-.5 * var(--bs-gutter-x));
+}
+.col{
+  padding: 0 !important;
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
